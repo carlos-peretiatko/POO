@@ -60,7 +60,7 @@ Crie três atributos privados: um do tipo String para o logradouro, outro do tip
 complemento e um do tipo int para o número
 Crie objetos de Pessoa
 
-7)
+--7)
 A Câmara Municipal de Vereadores de Blumenau pretende realizar uma estatística sobre o 
 desempenho dos seus parlamentares.
 Para cada um dos vereadores, ela possui o nome, partido, quantidade de projetos 
