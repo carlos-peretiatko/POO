@@ -82,14 +82,13 @@ d) Os vereadores cujo desempenho seja maior que o desempenho médio de toda a c�
 Desafio:
 Descubra o partido com o melhor desempenho médio
 
-8)
+--8)
 Um matemático está necessitando de várias funções relacionadas a um número inteiro 
 positivo. 
 Suponha a definição de uma classe Inteiro Positivo que apresenta o seguinte atributo: um 
 número X.
 Implemente os seguintes métodos:
-a) um método setValor, que realiza a consistência necessária para garantir que X seja um inteiro 
-positivo
+a) um método setValor, que realiza a consistência necessária para garantir que X seja um inteiro positivo
 b) um método para retornar o número X multiplicado por outro objeto de InteiroPositivo
 c) um método para calcular o fatorial de X
 Fatorial (X) = X * (X-1) * (X-2) * (X-3) * … * 2 * 1
