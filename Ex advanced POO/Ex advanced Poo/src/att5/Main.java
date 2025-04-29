@@ -1,24 +1,13 @@
 package att5;
 
 public class Main {
-    
     public static void main(String[] args) {
-        
-        Banco banco = new Banco();
+        Bairro bairro = new Bairro();
 
-        banco.adicionarConta(new Conta("João", 1000.0));
-        banco.adicionarConta(new Conta("Maria", 2000.0));
-        banco.adicionarConta(new Conta("Pedro", 3000.0));
+        bairro.adicionarPessoa(new Pessoa("João", new Endereco("Rua A", "Casa", 123)));
+        bairro.adicionarPessoa(new Pessoa("Maria", new Endereco("Rua B", "Apartamento", 456)));
+        bairro.adicionarPessoa(new Pessoa("Pedro", new Endereco("Rua C", "Sobrado", 789)));
 
-        System.out.println(banco.toString());
-
-        banco.sacar("João", 500.0);
-        banco.depositar("Maria", 1000.0);
-        banco.transferir("Pedro", "João", 1500.0);
-
-        System.out.println("-------------------------------------------\n");
-        System.out.println(banco.toString());
-
+        System.out.println(bairro.toString());
     }
-
 }

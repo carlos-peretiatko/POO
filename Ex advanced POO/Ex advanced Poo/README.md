@@ -1,35 +1,25 @@
-Exercícios Avançados de POO
+Exercícios Relacionamento Entre Objetos
 Para todos os exercícios dessa lista:
-Fazer método construtor, atributos privados, getters e setters, método toString, tratamento de 
+Fazer método construtor, atributos privados, getters e setters, método toString, tratamento de
 exceção e Array List quando necessário.
--- 1)
+
+1)
 Faça uma classe chamada Retangulo, com os atributos altura e largura.
 Faça um método para descobrir a área e outro para descobrir o perímetro.
 Crie 5 objetos de Retangulo.
 Crie uma lista em outra classe para armazenar todos os objetos de Retangulo
-Faça um método que encontre o Retangulo com a maior área e outro que encontre o Retangulo 
+Faça um método que encontre o Retangulo com a maior área e outro que encontre o Retangulo
 com o maior perímetro
 Imprima o toString desses Retangulos
 
---2)
-Em um sistema de uma floricultura deve se guardar o nome da flor, o preço, o nome do cliente 
+2)
+Em um sistema de uma floricultura deve se guardar o nome da flor, o preço, o nome do cliente
 que comprou a flor e um boolean que determina se a flor é para presente ou não
 Descubra:
 a) Qual a flor mais cara?
 b) Se a loja teve uma receita maior vendendo flores para presente ou não
 
---3)
-Crie uma classe Empregado que terá como atributos:
-Identificação
-Nome
-Sobrenome
-Salário (mensal)
-Crie métodos para:
-Saber o salário anual do empregado
-Saber o nome completo do empregado
-Modificar o salário, o parâmetro do método deve ser o percentual de aumento
-
---4)
+3)
 Crie um sistema para uma loja de materiais de construção
 Os objetos terão os atributos:
 Nome, descrição, preço, volume (tamanho), peso e quantidade em estoque
@@ -43,30 +33,30 @@ b) Qual o material mais caro por metro cúbico
 c) Qual o material mais denso
 d) Qual o material que mais ocupa espaço no estoque
 
---5)
+4)
 Faça uma classe chamada Conta, com os atributos: nome do titular e saldo.
 Faça métodos para:
-Sacar dinheiro: o método deve receber a quantidade a ser sacada como parâmetro 
-Depositar dinheiro: o método deve receber a quantidade a ser depositada como parâmetro 
-Transferir dinheiro de uma conta para outra: o método deve receber como parâmetro o objeto 
+Sacar dinheiro: o método deve receber a quantidade a ser sacada como parâmetro
+Depositar dinheiro: o método deve receber a quantidade a ser depositada como parâmetro
+Transferir dinheiro de uma conta para outra: o método deve receber como parâmetro o objeto
 que receberá a transferência e a quantidade a ser transferida
 
---6)
+5)
 O objetivo deste exercício é implementar a relação entre uma pessoa e seu endereço.
 Classe Pessoa:
 Crie os atributos de nome e Endereco, em que Endereco é uma classe
 Classe Endereco:
-Crie três atributos privados: um do tipo String para o logradouro, outro do tipo String para o 
+Crie três atributos privados: um do tipo String para o logradouro, outro do tipo String para o
 complemento e um do tipo int para o número
 Crie objetos de Pessoa
 
---7)
-A Câmara Municipal de Vereadores de Blumenau pretende realizar uma estatística sobre o 
+6)
+A Câmara Municipal de Vereadores de Blumenau pretende realizar uma estatística sobre o
 desempenho dos seus parlamentares.
-Para cada um dos vereadores, ela possui o nome, partido, quantidade de projetos 
-apresentados e quantidade de projetos aprovados. 
-O desempenho é calculado da seguinte forma: 
-(projetos aprovados / projetos apresentados) * índice de trabalho. 
+Para cada um dos vereadores, ela possui o nome, partido, quantidade de projetos
+apresentados e quantidade de projetos aprovados.
+O desempenho é calculado da seguinte forma:
+(projetos aprovados / projetos apresentados) * índice de trabalho.
 Se não apresentou nenhum projeto, o desempenho é 0 (zero).
 O índice de trabalho é definido pela seguinte tabela:
 Projetos apresentados Índice de trabalho
@@ -82,21 +72,23 @@ d) Os vereadores cujo desempenho seja maior que o desempenho médio de toda a c�
 Desafio:
 Descubra o partido com o melhor desempenho médio
 
---8)
-Um matemático está necessitando de várias funções relacionadas a um número inteiro 
-positivo. 
-Suponha a definição de uma classe Inteiro Positivo que apresenta o seguinte atributo: um 
+7)
+Um matemático está necessitando de várias funções relacionadas a um número inteiro
+positivo.
+Suponha a definição de uma classe Inteiro Positivo que apresenta o seguinte atributo: um
 número X.
 Implemente os seguintes métodos:
-a) um método setValor, que realiza a consistência necessária para garantir que X seja um inteiro positivo
+a) um método setValor, que realiza a consistência necessária para garantir que X seja um inteiro
+positivo
 b) um método para retornar o número X multiplicado por outro objeto de InteiroPositivo
 c) um método para calcular o fatorial de X
 Fatorial (X) = X * (X-1) * (X-2) * (X-3) * … * 2 * 1
-d) um método para identificar os divisores inteiros de X e a quantidade de divisores.Exemplo: 
+d) um método para identificar os divisores inteiros de X e a quantidade de divisores.Exemplo:
 para o número 12, os divisores são 1, 2, 3, 4, 6, 12 e a quantidade de divisores é 6
 e) um método para calcular a série de Fibonacci formada por X elemento
 Fibonacci = 1, 1, 2, 3, 5, 8, 13, …
-9)
+
+8)
 Implemente um programa para ler o cadastro de um laboratório de informática.
 No laboratório existem N computadores.
 Cada computador possui as seguintes informações:
@@ -108,7 +100,7 @@ Cada computador possui as seguintes informações:
 - quantidade de memória
 - consumo de energia
 - potência da fonte
-O boolean referente ao overclock não deve ser passado como parâmetro do construtor, mas 
+O boolean referente ao overclock não deve ser passado como parâmetro do construtor, mas
 atribuido true no construtor caso o modelo do processador termine em 'K' ou 'KF' ou 'X' e false
 caso não termine.
 Faça:
@@ -117,19 +109,19 @@ O método deve ter como parâmetro o incremento em MHz que será feito de overcl
 Os processadores só aceitam overclock até 10% do clock original.
 A cada 100 MHz que o clock sobe, o consumo do computador aumenta em 75W.
 O consumo do computador nunca deve ultrapassar 95% da potência da fonte.
-Note que o processador somente aceitará overclock caso a variável booleana de overclock for 
+Note que o processador somente aceitará overclock caso a variável booleana de overclock for
 true.
-Caso não seja possível fazer o overclock, por qualquer uma das limitações, informe por que 
+Caso não seja possível fazer o overclock, por qualquer uma das limitações, informe por que
 não foi possível.
 b) Um método que informe o armazenamento total desse laboratório
 c) O laboratório está pensando em implementar mais 3 salas iguais a essa no prédio.
-Eles querem saber antes qual o impacto do total de computadores nos gastos de energia 
+Eles querem saber antes qual o impacto do total de computadores nos gastos de energia
 elétrica.
-Informe qual a potência mínima em Watts que o circuito elétrico deve ter para acomodar todas 
+Informe qual a potência mínima em Watts que o circuito elétrico deve ter para acomodar todas
 as salas.
-A potência mínima é calculada a partir do consumo total e adicionado 10% por questões de 
+A potência mínima é calculada a partir do consumo total e adicionado 10% por questões de
 segurança.
-d) Assumindo que os computadores vão funcionar por uma média de 12 horas por dia, informe 
+d) Assumindo que os computadores vão funcionar por uma média de 12 horas por dia, informe
 também o gasto de energia elétrica que a empresa terá com essas 3 salas.
 Considere o preço da energia elétrica 71 centavos por KW/h.
 Considere esses computadores.
@@ -169,3 +161,30 @@ Computador 4:
  - Memória RAM: 16 GB
  - Consumo de energia: 450W
  - Potência da fonte: 550W
+
+9)
+
+10)
+
+11)
+Continente
+listaPaises: List <Pais>
++ adicionarPaises(Pais): void
+maiorPais(): Pais
+- nome: String
+dimensao: double
+Pais
+paisesDeFronteira: List<Pais>
++ fazFronteira(Pais): boolean
++ fronteiraslguais(Pais): List<Pais>
++ adicionarPaisesDeFronteira(Pais): void
+Continente:
+O método adicionarPaises deve adicionar um Pais à ArrayList de
+Continente.
+O método maiorPais deve encontrar o maior Pais daquele continente
+Pais:
+O método fazFronteira deve retornar true se o Pais passado como
+parâmetro faz fronteira com o Pais atual.
+O método fronteiraslguais deve retornar uma lista de paises que o atual
+e o passado como parâmetro fazem fronteira.
+O método adicionarPaisesDeFronteira deve adicionar um pais à lista.

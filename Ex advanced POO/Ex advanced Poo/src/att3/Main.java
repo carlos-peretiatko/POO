@@ -1,20 +1,28 @@
 package att3;
 
+// Descubra:
+// a) Qual o material mais caro
+// b) Qual o material mais caro por metro cúbico
+// c) Qual o material mais denso
+// d) Qual o material que mais ocupa espaço no estoque
+
+
 public class Main {
 
     public static void main(String[] args) {
-        Empregados empregados = new Empregados();
+        
+        loja loja = new loja();
 
-        empregados.adicionarEmpregado(new Empregado(1, "João", "Silva", 2000.0));
-        empregados.adicionarEmpregado(new Empregado(2, "Maria", "Santos", 2500.0));
-        empregados.adicionarEmpregado(new Empregado(3, "Pedro", "Oliveira", 3000.0));
+        loja.adicionarMaterial(new materiasDeConstrucao("Cimento", "Cimento Portland", 25.0, 0.5, 1.5, 100));
+        loja.adicionarMaterial(new materiasDeConstrucao("Areia", "Areia fina", 15.0, 0.3, 1.2, 200));
+        loja.adicionarMaterial(new materiasDeConstrucao("Brita", "Brita 1", 30.0, 0.7, 1.8, 150));
+        loja.adicionarMaterial(new materiasDeConstrucao("Tijolo", "Tijolo cerâmico", 0.5, 0.01, 0.5, 500));
 
-        System.out.println("Salário anual do empregado 1: " + empregados.salarioAnual(1));
-        System.out.println("Nome completo do empregado 2: " + empregados.nomeCompleto(2));
-        empregados.modificarSalario(3, 10);
-        System.out.println("Novo salário do empregado 3: " + empregados.salarioAnual(3));
-        empregados.modificarSalario(3, -10); // Deve lançar uma exceção
+        System.out.println("Material mais caro: " + loja.materialMaisCaro());
+        System.out.println("Material mais caro por m³: " + loja.materialMaisCaroPorMetroCubico());
+        System.out.println("Material mais denso: " + loja.materialMaisDenso());
+        System.out.println("Material que mais ocupa espaço: " + loja.materialQueMaisOcupaEspaco());
 
     }
-
+    
 }

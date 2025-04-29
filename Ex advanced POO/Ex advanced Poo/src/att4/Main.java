@@ -1,28 +1,24 @@
 package att4;
 
-// Descubra:
-// a) Qual o material mais caro
-// b) Qual o material mais caro por metro cúbico
-// c) Qual o material mais denso
-// d) Qual o material que mais ocupa espaço no estoque
-
-
 public class Main {
-
+    
     public static void main(String[] args) {
         
-        loja loja = new loja();
+        Banco banco = new Banco();
 
-        loja.adicionarMaterial(new materiasDeConstrucao("Cimento", "Cimento Portland", 25.0, 0.5, 1.5, 100));
-        loja.adicionarMaterial(new materiasDeConstrucao("Areia", "Areia fina", 15.0, 0.3, 1.2, 200));
-        loja.adicionarMaterial(new materiasDeConstrucao("Brita", "Brita 1", 30.0, 0.7, 1.8, 150));
-        loja.adicionarMaterial(new materiasDeConstrucao("Tijolo", "Tijolo cerâmico", 0.5, 0.01, 0.5, 500));
+        banco.adicionarConta(new Conta("João", 1000.0));
+        banco.adicionarConta(new Conta("Maria", 2000.0));
+        banco.adicionarConta(new Conta("Pedro", 3000.0));
 
-        System.out.println("Material mais caro: " + loja.materialMaisCaro());
-        System.out.println("Material mais caro por m³: " + loja.materialMaisCaroPorMetroCubico());
-        System.out.println("Material mais denso: " + loja.materialMaisDenso());
-        System.out.println("Material que mais ocupa espaço: " + loja.materialQueMaisOcupaEspaco());
+        System.out.println(banco.toString());
+
+        banco.sacar("João", 500.0);
+        banco.depositar("Maria", 1000.0);
+        banco.transferir("Pedro", "João", 1500.0);
+
+        System.out.println("-------------------------------------------\n");
+        System.out.println(banco.toString());
 
     }
-    
+
 }
